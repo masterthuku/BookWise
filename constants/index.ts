@@ -137,6 +137,7 @@ export const navigationLinks = [
       videoUrl: "/sample-video.mp4?updatedAt=1722593504152",
       summary:
         "Rules for focused success in a distracted world, teaching how to cultivate deep focus to achieve peak productivity.",
+        isLoanedBook: true
     },
     {
       id: 6,
