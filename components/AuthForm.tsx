@@ -15,7 +15,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -84,7 +83,8 @@ const AuthForm = <T extends FieldValues>({
                         type={
                           FIELD_TYPES[field.name as keyof typeof FIELD_TYPES]
                         }
-                        {...field} className="form-input"
+                        {...field}
+                        className="form-input"
                       />
                     )}
                   </FormControl>
@@ -94,7 +94,9 @@ const AuthForm = <T extends FieldValues>({
             />
           ))}
 
-          <Button type="submit">Submit</Button>
+          <Button type="submit" className="form-btn">
+            {isSignIn ? "Sign In" : "Sign Up"}
+          </Button>
         </form>
       </Form>
       <p className="text-center text-base font-medium">
